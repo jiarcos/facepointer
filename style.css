@@ -1,0 +1,62 @@
+body{
+	background: thistle;
+}
+/* grid */
+.container {
+	position: relative;
+}
+.grid {
+	height: 450px;
+}
+.first-line,
+.second-line,
+.last-line {
+    display: flex;
+    justify-content: space-around;
+}
+.first-line div,
+.second-line div,
+.last-line div {
+	background: aquamarine;
+    margin: 10px;
+    min-width: 100px;
+    min-height: 200px;
+    display: flex;
+    flex-basis: 33%;
+    opacity: 0;
+}
+.second-line div {
+	min-height: 250px;
+}
+.last-line div {
+	flex-basis: 20%;
+}
+
+/* head */
+.first-line div:nth-child(1){flex-basis: 45%;}
+.first-line div:nth-child(2){flex-basis: 10%;}
+.first-line div:nth-child(3){flex-basis: 45%;}
+.second-line div:nth-child(1){flex-basis: 45%;}
+.second-line div:nth-child(2){flex-basis: 10%;}
+.second-line div:nth-child(3){flex-basis: 45%;}
+.last-line div:nth-child(1){flex-basis: 45%;}
+.last-line div:nth-child(2){flex-basis: 2%;}
+.last-line div:nth-child(3){flex-basis: 8%;}
+.last-line div:nth-child(4){flex-basis: 2%;}
+.last-line div:nth-child(5){flex-basis: 45%;}
+
+/* head (image) */
+.head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 450px;
+	overflow: hidden;
+	position: absolute;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.head img { margin-top: -5400px; }
